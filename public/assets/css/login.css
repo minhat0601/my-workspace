@@ -1,0 +1,528 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #faf8ef;
+    color: #68728c;
+    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    margin: 0;
+    min-height: 100vh;
+}
+
+h1 {
+    color: #2e3897;
+    margin-bottom: 0;
+}
+
+input,
+textarea {
+    border: 1px solid #c8cada;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    min-height: 3.5em;
+    padding: 1em 1em 0.8em 1em;
+}
+
+button {
+    background-color: #e8444e;
+    border: 1px solid #e8444e;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    font-family: "SansaPro-SemiBold";
+    font-size: 1.2rem;
+    line-height: 1.5;
+    padding: 10px 30px 12px;
+    position: relative;
+    overflow: hidden;
+}
+
+.recuperar-pass {
+    display: none;
+}
+
+.loginscreen-container {
+    flex: 1 1 auto;
+}
+
+.loginscreen-container .ilus svg {
+    height: 99vh;
+    object-fit: cover;
+    width: calc(100% - 640px);
+}
+
+.loginscreen-container .ilus .copy {
+    font-weight: bold;
+    left: 10px;
+    line-height: 1;
+    position: absolute;
+    bottom: 0;
+}
+
+.loginscreen-container h3 {
+    font-size: 1.25rem;
+    font-weight: normal;
+    margin: 35px 0;
+}
+
+.loginscreen-container .login-form {
+    background-color: white;
+    border-left: 1px solid #e9e9e9;
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    height: 100vh;
+    margin: 0;
+    max-width: 700px;
+    overflow: auto;
+    padding: 6em 9em 2em;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.loginscreen-container .login-form>svg {
+    flex-shrink: 0;
+    max-width: 200px;
+}
+
+.loginscreen-container .login-form form {
+    margin-top: 2em;
+    width: 22em;
+}
+
+.loginscreen-container .login-form form .olvidadoclave {
+    display: block;
+    font-size: 0.75rem;
+    margin: 10px 0 30px;
+    text-align: right;
+}
+
+.loginscreen-container .login-form input,
+.loginscreen-container .login-form label {
+    width: 100%;
+}
+
+.loginscreen-container .login-form input {
+    margin-bottom: 20px;
+}
+
+.loginscreen-container .login-form button {
+    display: block;
+    margin-top: 2em;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.loginscreen-container .login-form .termsandco {
+    font-size: 0.9rem;
+    margin-top: auto;
+    text-align: center;
+}
+
+.form-login {
+    display: none;
+}
+
+#login-animation .st0,
+#login-animation .st1 {
+    fill: none;
+    stroke-miterlimit: 10;
+}
+
+#login-animation .st0 {
+    stroke-width: 35;
+    stroke: #e9e9e9;
+}
+
+#login-animation .st1 {
+    stroke: #a3a3a3;
+    stroke-linecap: square;
+    stroke-linejoin: round;
+    stroke-dasharray: 3.2534, 9.1094;
+}
+
+#login-animation .st4 {
+    fill: #e9e9e9;
+}
+
+#login-animation .st22 {
+    stroke: #e9e9e9;
+}
+
+#login-animation .st7 {
+    fill: none;
+    stroke: #2e3897;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+#login-animation .st8 {
+    fill: #2e3897;
+}
+
+#login-animation .st9 {
+    fill: #8ee2e0;
+}
+
+#login-animation .st10 {
+    fill: #f1848a;
+}
+
+#login-animation .st12 {
+    fill: none;
+    stroke: #2e3897;
+    stroke-miterlimit: 10;
+}
+
+#login-animation .st14 {
+    fill: none;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+}
+
+#login-animation .st15 {
+    fill: #e8444e;
+}
+
+#login-animation .st19,
+#login-animation .st20 {
+    stroke: #8ee2e0;
+}
+
+#login-animation .st19 {
+    fill: none;
+    stroke-miterlimit: 10;
+}
+
+#login-animation .st20 {
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+#login-animation .st20,
+#login-animation .st21,
+#login-animation .st22 {
+    fill: none;
+    stroke-miterlimit: 10;
+}
+
+#login-animation .st21 {
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #fff;
+}
+
+#login-animation .st24 {
+    fill: #d5d5d5;
+}
+
+#login-animation .st26 {
+    fill: #a4c4d5;
+}
+
+#login-animation .st27 {
+    fill: #c2dad5;
+}
+
+#login-animation .st31 {
+    fill: none;
+    stroke: #e9e9e9;
+    stroke-width: 25;
+    stroke-miterlimit: 10;
+}
+
+#login-animation .agua,
+#login-animation .st33,
+#login-animation .st34 {
+    stroke: #2e3897;
+}
+
+#login-animation .st33 {
+    stroke-miterlimit: 10;
+    fill: #f1848a;
+}
+
+#login-animation .st34,
+#login-animation .st36,
+#login-animation .st38 {
+    stroke-miterlimit: 10;
+}
+
+#login-animation .st36 {
+    stroke-width: 0.5;
+    fill: none;
+    stroke: #fff;
+}
+
+#login-animation .st38 {
+    fill: #b3d6e9;
+    stroke: #2e3897;
+}
+
+#login-animation .st39 {
+    fill: #86b8ce;
+}
+
+#login-animation .st40,
+#login-animation .st41,
+#login-animation .st43,
+#login-animation .st45,
+#login-animation .st46 {
+    fill: #f1848a;
+    stroke: #2e3897;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+#login-animation .st13,
+#login-animation .st41 {
+    fill: #b3d6e9;
+}
+
+#login-animation .st5,
+#login-animation .st45,
+#login-animation .st34 {
+    fill: #fff;
+}
+
+#login-animation .st11,
+#login-animation .st43 {
+    fill: #fff9e1;
+}
+
+#login-animation .st6,
+#login-animation .st46 {
+    fill: #d4efe9;
+}
+
+.night {
+    background-color: rgba(36, 44, 125, 0.4);
+    position: relative;
+}
+
+.night .star {
+    fill: white;
+}
+
+.night::after,
+.noon::after {
+    background-color: rgba(36, 44, 125, 0.2);
+    content: "";
+    width: 100%;
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    pointer-events: none;
+}
+
+.night #sol {
+    fill: white;
+}
+
+.night .luz {
+    fill: #fff400;
+    filter: url(#glow);
+}
+
+.sky {
+    display: none;
+}
+
+.night .sky {
+    display: block;
+}
+
+#train {
+    transform: translateX(-100%);
+    animation: moveRight 30s ease-in-out 10 forwards;
+}
+
+#pin,
+#globo {
+    animation: float 1s ease-in-out 20 alternate;
+}
+
+#globo {
+    animation-duration: 5s;
+}
+
+#rueda {
+    transform-origin: center;
+    transform-box: fill-box;
+    animation: girar 20s linear 20;
+}
+
+.agua,
+#graph {
+    stroke: #2e3897;
+    stroke-dasharray: 10 3;
+    stroke-dashoffset: 40;
+    animation: borderanimation 4s linear 20;
+}
+
+#graph {
+    stroke: #e8444e;
+    stroke-dasharray: 10 5 20 5;
+}
+
+@keyframes borderanimation {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+#bus {
+    transform: translateX(-50%);
+    animation: bus 12s 4s ease-out forwards;
+}
+
+@keyframes bus {
+    70%,
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.goma {
+    stroke-dasharray: 7 6;
+    transform-origin: center;
+    transform-box: fill-box;
+    animation: girar 1s linear 12;
+}
+
+@keyframes girar {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#hamaca {
+    transform-origin: top;
+    transform-box: fill-box;
+    animation: hamaca 2s ease-in-out 20 alternate;
+}
+
+@keyframes hamaca {
+    from {
+        transform: perspective(430em) rotateX(-10deg);
+    }
+    to {
+        transform: perspective(430em) rotateX(10deg);
+    }
+}
+
+#asiento {
+    transform-origin: top;
+    transform-box: fill-box;
+    animation: asiento 2s ease-in-out 20 alternate;
+}
+
+@keyframes asiento {
+    from {
+        transform: translate(1px, -3px) scale(0.9);
+    }
+    to {
+        transform: translate(0px, -1px) scale(1.02);
+    }
+}
+
+#cloud,
+#cloud2 {
+    transform: translateX(-30%);
+    animation: nubes 80s linear 20;
+}
+
+#cloud {
+    animation-delay: 5s;
+    animation-duration: 100s;
+}
+
+@keyframes nubes {
+    to {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes moveRight {
+    20%,
+    40% {
+        transform: translateX(0);
+    }
+    60%,
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes float {
+    from {
+        transform: translateY(-5px);
+    }
+    to {
+        transform: translateY(2px);
+    }
+}
+
+#globos,
+#ball {
+    transform: rotate(5deg);
+    transform-box: fill-box;
+    transform-origin: bottom;
+    animation: globos 4s ease-in-out 20 alternate;
+}
+
+#ball {
+    transform-origin: center;
+}
+
+@keyframes globos {
+    to {
+        transform: rotate(-5deg);
+    }
+}
+
+.noon {
+    background-color: #fffcf2;
+    position: relative;
+}
+
+.noon::after {
+    background-color: rgba(255, 181, 14, 0.1);
+}
+
+.noon #sol {
+    fill: #f9d9bf;
+    transform: translate(305px, 40px);
+}
+
+@media only screen and (max-width: 850px) {
+    .loginscreen-container .ilus svg {
+        width: 100%;
+    }
+    .loginscreen-container .login-form {
+        height: auto;
+        left: 0;
+        top: 0;
+        right: 0;
+        margin: 0 auto;
+        padding: 2em;
+        width: 60%;
+    }
+    .loginscreen-container .login-form form {
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .loginscreen-container .login-form {
+        width: 100%;
+    }
+}
